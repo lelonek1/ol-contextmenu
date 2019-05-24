@@ -86,7 +86,7 @@ export class Html {
       separator = true;
     } else {
       item.classname = item.classname || '';
-      html = `<span>${item.text}</span>`;
+      html = `<span${item.style ? ` style="${item.style}"` : ''}>${item.text}</span>`;
       frag = createFragment(html);
       element = document.createElement('li');
 
