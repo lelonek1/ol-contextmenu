@@ -1,10 +1,11 @@
-import Control from 'ol/control/Control';
+import ol from 'ol';
 import { DEFAULT_OPTIONS, DEFAULT_ITEMS } from './constants';
 import { Internal } from './internal';
 import { Html } from './html';
 import { assert, mergeOptions, isDefAndNotNull } from './helpers/mix';
 import './sass/main.scss';
 
+const Control = ol.control.Control;
 /**
  * @class Base
  * @extends {ol.control.Control}

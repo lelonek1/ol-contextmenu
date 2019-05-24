@@ -13,10 +13,10 @@ import cssVars from './src/cssVars';
 
 const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'));
 const external = Object.keys(pkg.dependencies);
-external.push('ol/control/Control');
+external.push('ol');
 
 const globals = {
-  'ol/control/Control': 'ol.control.Control',
+ 'ol': 'ol',
 };
 
 const lintOpts = {
